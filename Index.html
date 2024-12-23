@@ -1,85 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Virtual Keyboard with Table</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
-    table {
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-      background: #007bff;
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    td:active {
-      background: #0056b3;
-    }
-    #output {
-      margin-bottom: 20px;
-      padding: 10px;
-      width: 90%;
-      max-width: 500px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 18px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Keyboard</title>
 </head>
 <body>
-  <textarea id="output" rows="2" readonly></textarea>
-  <table>
-    <tr>
-      <td>Q</td>
-      <td>W</td>
-      <td>E</td>
-      <td>R</td>
-      <td>T</td>
-      <td>Y</td>
-      <td>U</td>
-      <td>I</td>
-      <td>O</td>
-      <td>P</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>S</td>
-      <td>D</td>
-      <td>F</td>
-      <td>G</td>
-      <td>H</td>
-      <td>J</td>
-      <td>K</td>
-      <td>L</td>
-    </tr>
-    <tr>
-      <td>Z</td>
-      <td>X</td>
-      <td>C</td>
-      <td>V</td>
-      <td>B</td>
-      <td>N</td>
-      <td>M</td>
-      <td colspan="3" style="background: #333; color: rgb(255, 255, 255);">Space</td>
-    </tr>
-  </table>
-  
+    <table border="1" cellpadding="5" cellspacing="0">
+        <!-- Function keys -->
+        <tr>
+            <td>Esc</td>
+            <td>F1</td>
+            <td>F2</td>
+            <td>F3</td>
+            <td>F4</td>
+            <td>F5</td>
+            <td>F6</td>
+            <td>F7</td>
+            <td>F8</td>
+            <td>F9</td>
+            <td>F10</td>
+            <td>F11</td>
+            <td>F12</td>
+            <td>PrtSc</td>
+            <td>Scroll Lock</td>
+            <td>Pause</td>
+        </tr>
+        <!-- Number row -->
+        <tr>
+            <td>~</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>0</td>
+            <td>-</td>
+            <td>=</td>
+            <td colspan="2">Backspace</td>
+        </tr>
+        <!-- Top alphabet row -->
+        <tr>
+            <td>Tab</td>
+            <td>Q</td>
+            <td>W</td>
+            <td>E</td>
+            <td>R</td>
+            <td>T</td>
+            <td>Y</td>
+            <td>U</td>
+            <td>I</td>
+            <td>O</td>
+            <td>P</td>
+            <td>[</td>
+            <td>]</td>
+            <td>\</td>
+        </tr>
+        <!-- Middle alphabet row -->
+        <tr>
+            <td>Caps Lock</td>
+            <td>A</td>
+            <td>S</td>
+            <td>D</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+            <td>;</td>
+            <td>'</td>
+            <td colspan="2">Enter</td>
+        </tr>
+        <!-- Bottom alphabet row -->
+        <tr>
+            <td>Shift</td>
+            <td>Z</td>
+            <td>X</td>
+            <td>C</td>
+            <td>V</td>
+            <td>B</td>
+            <td>N</td>
+            <td>M</td>
+            <td>,</td>
+            <td>.</td>
+            <td>/</td>
+            <td colspan="2">Shift</td>
+        </tr>
+        <!-- Spacebar and other bottom keys -->
+        <tr>
+            <td>Ctrl</td>
+            <td>Fn</td>
+            <td>Win</td>
+            <td>Alt</td>
+            <td colspan="6">Space</td>
+            <td>Alt</td>
+            <td>Win</td>
+            <td>Menu</td>
+            <td>Ctrl</td>
+        </tr>
+        <!-- Arrow keys and navigation block -->
+        <tr>
+            <td colspan="6"></td>
+            <td>Insert</td>
+            <td>Home</td>
+            <td>PgUp</td>
+            <td>Delete</td>
+            <td>End</td>
+            <td>PgDn</td>
+            <td>↑</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="13"></td>
+            <td>←</td>
+            <td>↓</td>
+            <td>→</td>
+        </tr>
+        <!-- Numpad -->
+        <tr>
+            <td colspan="13"></td>
+            <td>Num Lock</td>
+            <td>/</td>
+            <td>*</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td colspan="13"></td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td colspan="13"></td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td colspan="13"></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td rowspan="2">Enter</td>
+        </tr>
+        <tr>
+            <td colspan="13"></td>
+            <td colspan="3">0</td>
+            <td>.</td>
+        </tr>
+    </table>
 </body>
 </html>
