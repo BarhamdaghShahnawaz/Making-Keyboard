@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Keyboard with Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    table {
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      background: #007bff;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    td:active {
+      background: #0056b3;
+    }
+    #output {
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 90%;
+      max-width: 500px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <textarea id="output" rows="2" readonly></textarea>
+  <table>
+    <tr>
+      <td>Q</td>
+      <td>W</td>
+      <td>E</td>
+      <td>R</td>
+      <td>T</td>
+      <td>Y</td>
+      <td>U</td>
+      <td>I</td>
+      <td>O</td>
+      <td>P</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>S</td>
+      <td>D</td>
+      <td>F</td>
+      <td>G</td>
+      <td>H</td>
+      <td>J</td>
+      <td>K</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Z</td>
+      <td>X</td>
+      <td>C</td>
+      <td>V</td>
+      <td>B</td>
+      <td>N</td>
+      <td>M</td>
+      <td colspan="3" style="background: #333; color: rgb(255, 255, 255);">Space</td>
+    </tr>
+  </table>
+  
+</body>
+</html>
