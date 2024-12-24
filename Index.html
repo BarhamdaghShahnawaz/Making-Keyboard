@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Keyboard</title>
+    <title>Enhanced Laptop Keyboard Layout</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <h1>Laptop Keyboard Layout</h1>
     <table>
-        <!-- Function keys -->
+
+        <br />
+        <br />
+
+        <tr>
+            <td colspan="13" class="spacer"></td>
+            <td>Insert</td>
+            <td>Home</td>
+            <td>Page Up</td>
+        </tr>
+        </tr>
+        <!-- Function keys row -->
         <tr>
             <td>Esc</td>
             <td>F1</td>
@@ -25,13 +35,13 @@
             <td>F10</td>
             <td>F11</td>
             <td>F12</td>
-            <td>PrtSc</td>
-            <td>Scroll Lock</td>
-            <td>Pause</td>
+            <td>Delete</td>
+            <td>End</td>
+            <td>Page Down</td>
         </tr>
         <!-- Number row -->
         <tr>
-            <td>~</td>
+            <td class="key-wide">~</td>
             <td>1</td>
             <td>2</td>
             <td>3</td>
@@ -44,11 +54,11 @@
             <td>0</td>
             <td>-</td>
             <td>=</td>
-            <td colspan="2">Backspace</td>
-        </tr>
-        <!-- Top alphabet row -->
+            <td class="key-wide">Backspace</td>
+
+        <!-- QWERTY row -->
         <tr>
-            <td>Tab</td>
+            <td class="key-wide">Tab</td>
             <td>Q</td>
             <td>W</td>
             <td>E</td>
@@ -63,9 +73,9 @@
             <td>]</td>
             <td>\</td>
         </tr>
-        <!-- Middle alphabet row -->
+        <!-- ASDF row -->
         <tr>
-            <td>Caps Lock</td>
+            <td class="key-wide">Caps Lock</td>
             <td>A</td>
             <td>S</td>
             <td>D</td>
@@ -77,11 +87,11 @@
             <td>L</td>
             <td>;</td>
             <td>'</td>
-            <td colspan="2">Enter</td>
+            <td class="key-wide">Enter</td>
         </tr>
-        <!-- Bottom alphabet row -->
+        <!-- ZXCV row -->
         <tr>
-            <td>Shift</td>
+            <td class="key-wide">Shift</td>
             <td>Z</td>
             <td>X</td>
             <td>C</td>
@@ -92,73 +102,32 @@
             <td>,</td>
             <td>.</td>
             <td>/</td>
-            <td colspan="2">Shift</td>
+            <td class="key-wide">Shift</td>
         </tr>
-        <!-- Spacebar and other bottom keys -->
+        <!-- Bottom row -->
         <tr>
-            <td>Ctrl</td>
-            <td>Fn</td>
-            <td>Win</td>
-            <td>Alt</td>
-            <td colspan="6">Space</td>
-            <td>Alt</td>
-            <td>Win</td>
-            <td>Menu</td>
-            <td>Ctrl</td>
-        </tr>
-        <!-- Arrow keys and navigation block -->
-        <tr>
-            <td colspan="6"></td>
-            <td>Insert</td>
-            <td>Home</td>
-            <td>PgUp</td>
-            <td>Delete</td>
-            <td>End</td>
-            <td>PgDn</td>
+            <td class="key-wide">Ctrl</td>
+            <td class="key-wide blue">Fn</td>
+            <td><img width="35px" src="./Assets/window logo.jpeg" alt="window logo"></td>
+            <td class="key-wide">Alt</td>
+            <td colspan="5" style="text-align: center;">Space</td>
+            <td class="key-wide">Alt</td>
+            <td class="key-wide">Ctrl</td>
             <td>↑</td>
-            <td colspan="2"></td>
+            <!-- <td class="spacer"></td> -->
         </tr>
+        <!-- Arrow keys row -->
         <tr>
-            <td colspan="13"></td>
+            <td class="spacer"></td>
+            <td class="spacer"></td>
+            <td class="spacer"></td>
+            <td colspan="5" class="spacer"></td>
+            <td class="spacer"></td>
+            <td class="spacer"></td>
             <td>←</td>
             <td>↓</td>
             <td>→</td>
         </tr>
-        <!-- Numpad -->
-        <tr>
-            <td colspan="13"></td>
-            <td>Num Lock</td>
-            <td>/</td>
-            <td>*</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td colspan="13"></td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>+</td>
-        </tr>
-        <tr>
-            <td colspan="13"></td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>+</td>
-        </tr>
-        <tr>
-            <td colspan="13"></td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td rowspan="2">Enter</td>
-        </tr>
-        <tr>
-            <td colspan="13"></td>
-            <td colspan="3">0</td>
-            <td>.</td>
-        </tr>
     </table>
 </body>
-
 </html>
